@@ -21,6 +21,10 @@ class Main extends Controller
 	 */
 	public function main()
 	{
-        return new Response('Hello =;)');
+        return $this->render(
+            'default/index.html.twig',
+            [
+            ]
+        );
 	}
 }
