@@ -3,6 +3,9 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 // set if you're also including font-awesome
 //$fa-font-path: "~font-awesome/fonts";
 
+@import "variables";
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
 html {
   position: relative;
   min-height: 100%;
@@ -21,7 +24,3 @@ body {
   background-color: #f5f5f5;
   padding-top: 5px;
 }
-
-
-@import "variables";
-@import '~bootstrap-sass/assets/stylesheets/bootstrap';

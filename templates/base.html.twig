@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{% block title %}StarLinker{% endblock %}</title>
+    <title>{% block title %}Hello{% endblock %}</title>
 
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
 
@@ -33,11 +33,11 @@
 
 {% include ('_footer.html.twig') %}
 
-{% block javascripts %}
-    <script type="text/javascript" src="{{ asset('build/manifest.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('build/js/common.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('build/js/app.js') }}"></script>
-{% endblock %}
+<script type="text/javascript" src="{{ asset('build/manifest.js') }}"></script>
+<script type="text/javascript" src="{{ asset('build/js/common.js') }}"></script>
+<script type="text/javascript" src="{{ asset('build/js/app.js') }}"></script>
+
+{% block javascripts %}{% endblock %}
 
 </body>
 </html>

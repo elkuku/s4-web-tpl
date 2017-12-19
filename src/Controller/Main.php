@@ -15,14 +15,27 @@ use Symfony\Component\Routing\Annotation\Route;
 class Main extends Controller
 {
 	/**
-	 * @Route("/", name="welcome")
+	 * @Route("/", name="hello")
 	 *
 	 * @return Response
 	 */
-	public function main()
+	public function hello()
 	{
         return $this->render(
             'default/index.html.twig',
+            [
+            ]
+        );
+	}
+
+    /**
+     * @Route("/world", name="world")
+     * @return Response
+     */
+    public function world()
+    {
+        return $this->render(
+            'default/world.html.twig',
             [
             ]
         );
